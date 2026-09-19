@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import StackRing from "@/components/StackRing";
 import About from "@/components/About";
+import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Projects />
       <StackRing />
       <About />
+      <Resume />
       <Contact />
     </main>
   );

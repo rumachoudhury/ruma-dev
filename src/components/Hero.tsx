@@ -36,6 +36,9 @@ export default function Hero() {
           <a className="btn primary" href="#projects">
             See my work
           </a>
+          <a className="btn" href={profile.resume} target="_blank" rel="noreferrer">
+            Resume
+          </a>
           <a className="btn" href="#contact">
             Get in touch
           </a>

@@ -6,5 +6,6 @@ export const profile = {
   github: "https://github.com/rumachoudhury",
   githubRepos: "https://github.com/rumachoudhury?tab=repositories",
   linkedin: "https://www.linkedin.com/in/ruma-choudhury",
+  resume: "/resume.html",
   availability: "Open to full-time roles",
 } as const;

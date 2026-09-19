@@ -28,6 +28,9 @@ export default function Header() {
           ))}
         </nav>
         <div className="pill-r">
+          <a className="btn small" href={profile.resume} target="_blank" rel="noreferrer">
+            Resume
+          </a>
           <a className="btn primary small" href={`mailto:${profile.email}`}>
             Email me
           </a>
