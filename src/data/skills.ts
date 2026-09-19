@@ -16,7 +16,7 @@ export const ringSkills: RingSkill[] = [
   { name: "Tailwind CSS", category: "Styling", color: "#38BDF8" },
   { name: "Framer Motion", category: "Animation", color: "#FF5CAA" },
   { name: "GSAP", category: "Animation", color: "#88CE02" },
-  // { name: "Python", category: "Language", color: "#FFD43B" },
+  { name: "NoSQL", category: "Database", color: "#F59E0B" },
   { name: "Cypress", category: "Testing", color: "#5DF2A0" },
 ];
 
@@ -28,7 +28,7 @@ export const toolbox = [
   },
   {
     label: "Backend",
-    items: "Node.js, Express, MongoDB, Mongoose, Supabase, Python",
+    items: "Node.js, Express, MongoDB, Mongoose, Supabase",
   },
   {
     label: "Tools",
