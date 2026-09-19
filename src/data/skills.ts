@@ -16,7 +16,7 @@ export const ringSkills: RingSkill[] = [
   { name: "Tailwind CSS", category: "Styling", color: "#38BDF8" },
   { name: "Framer Motion", category: "Animation", color: "#FF5CAA" },
   { name: "GSAP", category: "Animation", color: "#88CE02" },
-  { name: "Python", category: "Language", color: "#FFD43B" },
+  // { name: "Python", category: "Language", color: "#FFD43B" },
   { name: "Cypress", category: "Testing", color: "#5DF2A0" },
 ];
 
@@ -26,8 +26,14 @@ export const toolbox = [
     items:
       "HTML, CSS, Sass, Tailwind CSS, Bootstrap, JavaScript, TypeScript, React, Next.js, Framer Motion, GSAP",
   },
-  { label: "Backend", items: "Node.js, Express, MongoDB, Mongoose, Supabase, Python" },
-  { label: "Tools", items: "Git, GitHub, Postman, VS Code, Cypress, Turborepo, n8n" },
+  {
+    label: "Backend",
+    items: "Node.js, Express, MongoDB, Mongoose, Supabase, Python",
+  },
+  {
+    label: "Tools",
+    items: "Git, GitHub, Postman, VS Code, Cypress, Turborepo, n8n",
+  },
 ];
 
 export const alsoUse =

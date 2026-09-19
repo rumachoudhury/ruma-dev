@@ -6,6 +6,7 @@ export interface FeaturedProject {
   tech: string[];
   repo: string;
   visual: VisualKind;
+  image: string;
 }
 
 export interface MoreProject {
@@ -26,6 +27,7 @@ export const featuredProjects: FeaturedProject[] = [
     tech: ["Next.js", "Turborepo", "TypeScript", "Tailwind CSS", "n8n"],
     repo: `${GH}/monorepo-ecommerce-app`,
     visual: "shop",
+    image: "/project-images/monorepo-ecommerce-app.png",
   },
   {
     title: "Bright Path Therapy",
@@ -34,6 +36,7 @@ export const featuredProjects: FeaturedProject[] = [
     tech: ["Next.js", "Node.js", "Express", "MongoDB"],
     repo: `${GH}/bright-path-therapy`,
     visual: "therapy",
+    image: "/project-images/bright-path-therapy.png",
   },
   {
     title: "Sora landing page",
@@ -42,6 +45,7 @@ export const featuredProjects: FeaturedProject[] = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     repo: `${GH}/Sora-LandingPage`,
     visual: "sora",
+    image: "/project-images/sora-project.png",
   },
 ];
 
@@ -49,8 +53,8 @@ export const moreProjects: MoreProject[] = [
   {
     title: "Single-vendor platform",
     description:
-      "A single-vendor project split into a client, a backend and a Python AI service.",
-    tech: ["TypeScript", "Python"],
+      "A single-vendor project split into a client, a backend and an AI service.",
+    tech: ["TypeScript"],
     links: [
       { label: "Client", href: `${GH}/single-vendor-client1` },
       { label: "Backend", href: `${GH}/single-vendor-backend1` },
@@ -77,7 +81,10 @@ export const moreProjects: MoreProject[] = [
     description: "A JavaScript web app, deployed live on Netlify.",
     tech: ["JavaScript", "Netlify"],
     links: [
-      { label: "Live site", href: "https://splendorous-monstera-13bfe5.netlify.app/" },
+      {
+        label: "Live site",
+        href: "https://splendorous-monstera-13bfe5.netlify.app/",
+      },
       { label: "Code", href: `${GH}/Fresh-Bucket` },
     ],
   },
