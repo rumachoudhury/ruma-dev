@@ -12,7 +12,8 @@ export default function About() {
             <p className="about-kicker">Currently</p>
             <h3>{profile.name}</h3>
             <p className="about-summary">
-              Building practical web products with React, Next.js, and full-stack JavaScript.
+              Full-stack developer focused on building clean, scalable, and
+              user-centered web experiences.
             </p>
             <ul className="about-meta">
               <li>
@@ -34,18 +35,21 @@ export default function About() {
         <Reveal delay={1}>
           <div className="prose">
             <p>
-              I&apos;m a full-stack developer who recently finished an intensive IT bootcamp. I build
-              with the MERN stack and Next.js, and I like working on the whole path of a feature: the
-              interface someone clicks, the API behind it, and the data it saves.
+              I&apos;m a full-stack developer with hands-on experience building
+              modern web applications from concept to deployment. My work spans
+              both the frontend and backend, from polished user interfaces to
+              scalable APIs and robust data models.
             </p>
             <p>
-              I write JavaScript and TypeScript, build REST APIs with Node and Express, model data
-              with MongoDB and Supabase, and test whole flows with Cypress. Lately I&apos;ve been
-              adding AI features to my apps too, like an assistant wired up with n8n.
+              I work primarily with JavaScript and TypeScript, build REST APIs
+              with Node.js and Express, and design data layers with MongoDB and
+              Supabase. I also use Cypress to test end-to-end user flows and
+              have recently expanded into AI-powered product experiences,
+              including workflow automation with n8n.
             </p>
             <p>
-              Right now I&apos;m going deeper on Next.js and React, and I&apos;m preparing for my first
-              full-time developer role.
+              I&apos;m currently deepening my expertise in Next.js and React
+              while preparing for my next full-time developer opportunity.
             </p>
           </div>
           <dl className="toolbox">
