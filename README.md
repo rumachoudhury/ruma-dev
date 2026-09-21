@@ -1,40 +1,40 @@
 # Ruma Choudhury — Developer Portfolio
 
-A modern and interactive **3D developer portfolio** built with **Next.js, React, TypeScript, and Three.js**. This portfolio showcases my projects, technical skills, and experience through a clean, responsive interface with interactive 3D elements.
+A modern portfolio built with **Next.js**, **React**, **TypeScript**, and **Three.js**. It showcases my work, experience, and technical skill set in a responsive product-style layout with interactive 3D elements.
 
-🌐 **Live Website:** [ruma-dev.vercel.app](https://ruma-dev.vercel.app/)
-💻 **GitHub:** [github.com/rumachoudhury/ruma-dev](https://github.com/rumachoudhury/ruma-dev)
+## Live
 
-## ✨ Features
+- Portfolio: [ruma-dev.vercel.app](https://ruma-dev.vercel.app/)
+- GitHub: [github.com/rumachoudhury/ruma-dev](https://github.com/rumachoudhury/ruma-dev)
 
-* Interactive 3D WebGL hero section
-* Floating 3D technology stack visualization
-* 3D project cards with interactive effects
-* Rotating technology ring and 3D cube
-* Light and dark mode
-* Smooth scroll and reveal animations
-* Responsive design for desktop, tablet, and mobile
-* `prefers-reduced-motion` accessibility support
-* Graceful fallback when WebGL is unavailable
+## Features
 
-## 🛠️ Tech Stack
+- Interactive 3D WebGL hero scene
+- Rotating technology ring and 3D cube visuals
+- Tilt-based project cards
+- Light and dark mode
+- Reveal-on-scroll animations
+- Responsive layout for desktop, tablet, and mobile
+- Reduced-motion accessibility support
+- Graceful fallback when WebGL is unavailable
 
-* **Next.js** — App Router
-* **React**
-* **TypeScript**
-* **Three.js**
-* **WebGL**
-* **CSS**
-* **Node.js / npm**
-* **Git & GitHub**
+## Tech stack
 
-## 🚀 Getting Started
+- Next.js
+- React
+- TypeScript
+- Three.js
+- CSS
+- Node.js / npm
+- GitHub
+
+## Getting started
 
 ### Prerequisites
 
-* Node.js 20 or newer
-* npm
-* VS Code recommended
+- Node.js 20+
+- npm
+- VS Code recommended
 
 ### Installation
 
@@ -51,84 +51,88 @@ Then open:
 http://localhost:3000
 ```
 
-The page automatically updates whenever you save changes.
-
-## 📜 Available Commands
+## Available scripts
 
 ```bash
 npm run dev
 ```
-
-Start the development server.
+Start the local development server.
 
 ```bash
 npm run build
 ```
-
 Create a production build.
 
 ```bash
 npm run start
 ```
-
-Run the production build.
+Run the production build locally.
 
 ```bash
 npm run typecheck
 ```
+Check TypeScript without building.
 
-Check TypeScript for errors.
-
-## 📁 Project Structure
+## Project structure
 
 ```text
 src/
 ├── app/
+│   ├── globals.css
 │   ├── layout.tsx
 │   ├── page.tsx
-│   ├── globals.css
 │   └── icon.svg
-│
 ├── components/
+│   ├── About.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
 │   ├── Header.tsx
 │   ├── Hero.tsx
 │   ├── HeroScene.tsx
-│   ├── Projects.tsx
 │   ├── ProjectCard.tsx
+│   ├── Projects.tsx
+│   ├── Reveal.tsx
+│   ├── Resume.tsx
+│   ├── ScrollProgress.tsx
 │   ├── StackRing.tsx
-│   ├── About.tsx
-│   ├── Contact.tsx
-│   └── ThemeToggle.tsx
-│
+│   ├── ThemeToggle.tsx
+│   └── visuals.tsx
 ├── data/
 │   ├── profile.ts
 │   ├── projects.ts
 │   └── skills.ts
-│
-└── hooks/
+├── hooks/
+│   ├── cssVars.ts
+│   ├── useActiveSection.ts
+│   └── useRevealOnce.ts
+└──
 ```
 
-## 🌐 Deployment
+## Where to edit content
 
-This project can be deployed easily with **Vercel** or **Netlify**.
+- Profile details: `src/data/profile.ts`
+- Projects: `src/data/projects.ts`
+- Skills and ring data: `src/data/skills.ts`
+- About section: `src/components/About.tsx`
+- Styling and design tokens: `src/app/globals.css`
+- Hero scene: `src/components/HeroScene.tsx`
 
-The current production deployment is available at:
+## Deployment
+
+This project is set up for easy deployment on **Vercel**. The production deployment is currently live at:
 
 **[ruma-dev.vercel.app](https://ruma-dev.vercel.app/)**
 
-## 👩‍💻 About Me
+## About me
 
-I'm **Ruma Choudhury**, a Full-Stack Software Engineer focused on building modern, responsive, and user-friendly web applications.
+I’m a full-stack developer focused on building responsive, user-friendly web applications with React, Next.js, TypeScript, and modern backend tools. I enjoy creating polished digital experiences and continuously expanding my technical skill set through practical, product-driven work.
 
-My primary technologies include **React, Next.js, TypeScript, JavaScript, Node.js, Express, MongoDB, and modern frontend tools**.
+## Connect
 
-I enjoy creating polished web experiences and continuously expanding my skills through real-world projects.
-
-## 📬 Connect
-
-* 🌐 Portfolio: [ruma-dev.vercel.app](https://ruma-dev.vercel.app/)
-* 💻 GitHub: [github.com/rumachoudhury](https://github.com/rumachoudhury)
+- Portfolio: [ruma-dev.vercel.app](https://ruma-dev.vercel.app/)
+- GitHub: [github.com/rumachoudhury](https://github.com/rumachoudhury)
+- LinkedIn: [linkedin.com/in/ruma-choudhury](https://www.linkedin.com/in/ruma-choudhury)
 
 ---
 
-© 2026 **Ruma Choudhury**. All rights reserved.
+© 2026 Ruma Choudhury

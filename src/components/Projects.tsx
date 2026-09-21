@@ -9,8 +9,8 @@ export default function Projects() {
       <div className="wrap">
         <Reveal as="h2">Selected work</Reveal>
         <Reveal as="p" className="lede" delay={1}>
-          Three apps I&apos;m proud of, from a healthcare site with online booking to an ecommerce
-          monorepo with an AI assistant.
+          Three apps I&apos;m proud of, from a healthcare site with online
+          booking to an ecommerce monorepo with an AI assistant.
         </Reveal>
 
         <div className="grid3">
@@ -23,7 +23,12 @@ export default function Projects() {
           <Reveal as="h3">More projects</Reveal>
           <div className="more-grid">
             {moreProjects.map((project, i) => (
-              <Reveal as="article" className="mini" delay={i % 2} key={project.title}>
+              <Reveal
+                as="article"
+                className="mini"
+                delay={i % 2}
+                key={project.title}
+              >
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
                 <ul className="chips">
