@@ -1,77 +1,134 @@
-# Ruma Choudhury: Portfolio
+# Ruma Choudhury — Developer Portfolio
 
-A 3D portfolio built with **Next.js (App Router)**, **React**, **TypeScript** and **three.js**.
+A modern and interactive **3D developer portfolio** built with **Next.js, React, TypeScript, and Three.js**. This portfolio showcases my projects, technical skills, and experience through a clean, responsive interface with interactive 3D elements.
 
-- 3D WebGL hero: a floating stack of glass layers (Browser, API, Database, Tests) with data packets travelling through it
-- CSS 3D project cards that tilt toward the cursor, a rotating 3D tech ring, and a spinning 3D cube
-- Light and dark mode, scroll-reveal animations, and full `prefers-reduced-motion` support
+🌐 **Live Website:** [ruma-dev.vercel.app](https://ruma-dev.vercel.app/)
+💻 **GitHub:** [github.com/rumachoudhury/ruma-dev](https://github.com/rumachoudhury/ruma-dev)
 
-## Run it in VS Code
+## ✨ Features
 
-1. Install [Node.js](https://nodejs.org) 20 or newer.
-2. Open this folder in VS Code (`File > Open Folder`, or run `code .` inside it).
-3. Open the terminal (`Ctrl+` ` or `View > Terminal`) and run:
+* Interactive 3D WebGL hero section
+* Floating 3D technology stack visualization
+* 3D project cards with interactive effects
+* Rotating technology ring and 3D cube
+* Light and dark mode
+* Smooth scroll and reveal animations
+* Responsive design for desktop, tablet, and mobile
+* `prefers-reduced-motion` accessibility support
+* Graceful fallback when WebGL is unavailable
+
+## 🛠️ Tech Stack
+
+* **Next.js** — App Router
+* **React**
+* **TypeScript**
+* **Three.js**
+* **WebGL**
+* **CSS**
+* **Node.js / npm**
+* **Git & GitHub**
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Node.js 20 or newer
+* npm
+* VS Code recommended
+
+### Installation
 
 ```bash
+git clone https://github.com/rumachoudhury/ruma-dev.git
+cd ruma-dev
 npm install
 npm run dev
 ```
 
-4. Open http://localhost:3000. The page reloads every time you save a file.
+Then open:
 
-Other commands:
+```text
+http://localhost:3000
+```
+
+The page automatically updates whenever you save changes.
+
+## 📜 Available Commands
 
 ```bash
-npm run build       # production build
-npm run start       # serve the production build
-npm run typecheck   # check TypeScript without building
+npm run dev
 ```
 
-## Where to edit things
+Start the development server.
 
-Most changes are in `src/data`, so you rarely need to touch the components.
-
-| I want to change...                      | Edit this file                  |
-| ---------------------------------------- | ------------------------------- |
-| Name, email, LinkedIn, availability text | `src/data/profile.ts`           |
-| Projects (featured cards, "More projects") | `src/data/projects.ts`        |
-| The 3D tech ring and skills lists        | `src/data/skills.ts`            |
-| About text                               | `src/components/About.tsx`      |
-| Colors, fonts, spacing, animations       | `src/app/globals.css` (`:root` at the top) |
-| The 3D hero scene                        | `src/components/HeroScene.tsx`  |
-
-### Add a real screenshot to a project card
-
-The card visuals in `src/components/visuals.tsx` are stylized illustrations. To use a real screenshot, put the image in `public/` (for example `public/bright-path.png`) and replace the visual in `ProjectCard.tsx` with:
-
-```tsx
-import Image from "next/image";
-<Image src="/bright-path.png" alt="Bright Path Therapy screenshot" width={800} height={600} />
+```bash
+npm run build
 ```
 
-## Project structure
+Create a production build.
 
+```bash
+npm run start
 ```
+
+Run the production build.
+
+```bash
+npm run typecheck
+```
+
+Check TypeScript for errors.
+
+## 📁 Project Structure
+
+```text
 src/
-  app/
-    layout.tsx        page shell, fonts, theme script
-    page.tsx          puts the sections together
-    globals.css       all styles and design tokens
-    icon.svg          favicon
-  components/
-    Header.tsx  Hero.tsx  HeroScene.tsx  Projects.tsx  ProjectCard.tsx
-    visuals.tsx  StackRing.tsx  About.tsx  Contact.tsx
-    Reveal.tsx  ScrollProgress.tsx  ThemeToggle.tsx
-  data/               profile, projects and skills content
-  hooks/              useRevealOnce, useActiveSection, cssVars
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   └── icon.svg
+│
+├── components/
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── HeroScene.tsx
+│   ├── Projects.tsx
+│   ├── ProjectCard.tsx
+│   ├── StackRing.tsx
+│   ├── About.tsx
+│   ├── Contact.tsx
+│   └── ThemeToggle.tsx
+│
+├── data/
+│   ├── profile.ts
+│   ├── projects.ts
+│   └── skills.ts
+│
+└── hooks/
 ```
 
-## Deploy
+## 🌐 Deployment
 
-Push the folder to GitHub, then import the repo on [Vercel](https://vercel.com) or [Netlify](https://netlify.com). Both detect Next.js automatically, so no settings are needed.
+This project can be deployed easily with **Vercel** or **Netlify**.
 
-## Notes
+The current production deployment is available at:
 
-- `three` is pinned to `0.128.0` on purpose. Newer versions of three.js use different light units, so the hero would need its light intensities retuned before you upgrade.
-- Fonts (Outfit and DM Sans) load from Google Fonts in `src/app/layout.tsx`, so the first load needs an internet connection.
-- If a visitor's browser doesn't support WebGL, the 3D hero is hidden and the rest of the page still works.
+**[ruma-dev.vercel.app](https://ruma-dev.vercel.app/)**
+
+## 👩‍💻 About Me
+
+I'm **Ruma Choudhury**, a Full-Stack Software Engineer focused on building modern, responsive, and user-friendly web applications.
+
+My primary technologies include **React, Next.js, TypeScript, JavaScript, Node.js, Express, MongoDB, and modern frontend tools**.
+
+I enjoy creating polished web experiences and continuously expanding my skills through real-world projects.
+
+## 📬 Connect
+
+* 🌐 Portfolio: [ruma-dev.vercel.app](https://ruma-dev.vercel.app/)
+* 💻 GitHub: [github.com/rumachoudhury](https://github.com/rumachoudhury)
+
+---
+
+© 2026 **Ruma Choudhury**. All rights reserved.
