@@ -326,8 +326,24 @@ h2::after { content: ""; display: block; width: 84px; height: 5px; margin-top: 1
 @keyframes cube { from { transform: rotateX(-24deg) rotateY(0deg); } to { transform: rotateX(-24deg) rotateY(360deg); } }
 @media (max-width: 760px) { .cta { grid-template-columns: 1fr; } .cube-stage { display: none; } }
 
-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 3.5rem; padding: 1.25rem 0 2.5rem; border-top: 1px solid var(--line); font: 500 .95rem var(--display); color: var(--muted); }
-footer a { text-underline-offset: 3px; }
+footer {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem;
+  margin-top: 2.5rem; padding: 1.1rem 0 2.3rem; border-top: 1px solid var(--line);
+  font: 500 .9rem var(--display); color: var(--muted);
+}
+footer span {
+  display: inline-flex; align-items: center; gap: .6rem;
+  letter-spacing: .01em;
+}
+footer span::before {
+  content: ""; width: .52rem; height: .52rem; border-radius: 50%;
+  background: linear-gradient(135deg, var(--a), var(--b)); box-shadow: 0 0 0 4px color-mix(in srgb, var(--a) 18%, transparent);
+}
+.footer-links { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.footer-links a {
+  color: var(--ink); text-decoration: none; opacity: .9; transition: color .25s var(--ease), opacity .25s var(--ease);
+}
+.footer-links a:hover { color: var(--a); opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
