@@ -1,11 +1,36 @@
 import Reveal from "./Reveal";
 import { toolbox } from "@/data/skills";
+import { profile } from "@/data/profile";
 
 export default function About() {
   return (
     <section className="section" id="about">
       <div className="wrap about">
-        <Reveal as="h2">About</Reveal>
+        <div className="about-side">
+          <Reveal as="h2">About</Reveal>
+          <div className="about-card">
+            <p className="about-kicker">Currently</p>
+            <h3>{profile.name}</h3>
+            <p className="about-summary">
+              Building practical web products with React, Next.js, and full-stack JavaScript.
+            </p>
+            <ul className="about-meta">
+              <li>
+                <span>Location</span>
+                <strong>{profile.location}</strong>
+              </li>
+              <li>
+                <span>Status</span>
+                <strong>{profile.availability}</strong>
+              </li>
+              <li>
+                <span>Email</span>
+                <a href={`mailto:${profile.email}`}>{profile.email}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <Reveal delay={1}>
           <div className="prose">
             <p>
