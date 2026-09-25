@@ -4,9 +4,9 @@
   "private": true,
   "description": "Portfolio of Ruma Choudhury, full-stack developer",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
