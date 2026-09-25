@@ -26,7 +26,7 @@ function ProjectArtwork({ kind }: { kind: VisualKind }) {
           objectFit: "contain",
           objectPosition: "center",
           borderRadius: "18px",
-          background: "rgba(255,255,255,0.7)",
+          background: "var(--surface-solid)",
         }}
       />
       <div
